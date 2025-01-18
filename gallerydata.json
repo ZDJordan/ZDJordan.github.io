@@ -1,13 +1,13 @@
 
 {
-  "illustration": [
+  "illustrations": [
     {
       "filename": "WesternComic.png",
       "title": "Railway Outlaw Crew",
       "description": "Comic series concept illustration"
     },
     {
-      "filename": "WarfConcept.png",
+      "filename": "WharfConcept.png",
       "title": "Mystery on the Warf",
       "description": "Comic series concept illustration"
     },
@@ -28,16 +28,16 @@
     },
     {
       "filename": "SamusPirates.png",
-      "title": "Samus Aran - Surrounded",
+      "title": "Warrior Samus Aran",
       "description": "Fan Work"
     },
     {
-      "filename": "illustration-bait.png",
+      "filename": "Illustration-Bait.png",
       "title": "Bait",
       "description": ""
     },
     {
-      "filename": "JammerDoor.png",
+      "filename": "JammerDoor.jpg",
       "title": "Let us In Already",
       "description": "Fan Work"
     },
@@ -52,9 +52,25 @@
       "description": "Fan Work"
     },
     {
-      "filename": "illustration-Empty.png",
+      "filename": "Illustration-Empty.png",
       "title": "Empty",
       "description": ""
+    }
+  ],
+
+  "concept art": [
+    {
+      "filename": "WesternComic.png",
+      "title": "Railway Outlaw Crew",
+      "description": "Comic series concept illustration"
+    }
+  ],
+
+  "comic work": [
+    {
+      "filename": "WesternComic.png",
+      "title": "Railway Outlaw Crew",
+      "description": "Comic series concept illustration"
     }
   ]
 }
