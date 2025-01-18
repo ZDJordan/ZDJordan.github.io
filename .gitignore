@@ -1,6 +1,3 @@
-*.afphoto
-*.afphoto~lock
-*autosave.kra
 *.php
 *.json
 scss/
