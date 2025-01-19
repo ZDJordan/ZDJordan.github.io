@@ -1,15 +1,13 @@
 html {
   box-sizing: border-box;
   font-size: 16px;
-  --c1: #9b8a8a;
+  --c1: #101717;
   --c2: #587fdb;
   --c3: #ADFFD9;
   --c4: #f5d447;
   --c5: #8293AA;
   --c6: #55828B;
   background-color: var(--c2);
-  background-size: 15px 15px;
-  background-attachment: fixed;
   font-family: "Lexend Deca", sans-serif;
 }
 
@@ -175,7 +173,7 @@ section {
 #main .content-wrapper {
   max-width: var(--width-calc-right);
 }
-#main .section-title {
+#main .gallery-section > .section-title {
   position: relative;
   top: 1.2rem;
   left: 3.5rem;
@@ -187,32 +185,56 @@ section {
 #main .gallery {
   display: flex;
   flex-wrap: wrap;
-  justify-content: var(--flex-alignment);
   gap: 0.8rem;
   padding: 3rem 3.5rem;
   border: 1px solid var(--c3);
   border-radius: 1rem;
 }
-#main .gallery li {
+#main .sub-gallery-wrapper {
+  border-top: 1px solid var(--c3);
+  border-radius: 0.7rem;
+  margin-top: 2rem;
+}
+#main .sub-gallery-wrapper h3 {
+  font-size: 1.3rem;
+  padding: 0 1rem;
+  position: relative;
+  top: -2.2rem;
+  left: 3.5rem;
+  background: var(--c2);
+  width: max-content;
+}
+#main .sub-gallery-wrapper h3 span {
+  font-size: 0.7em;
+}
+#main .sub-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+#main li:not(.sub-gallery-wrapper) {
   border-radius: 0.4rem;
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
-  flex-shrink: 1;
+  flex: 1 1 auto;
   position: relative;
+  max-height: 20rem;
+  overflow: hidden;
 }
-#main .gallery li img {
+#main li:not(.sub-gallery-wrapper) img {
   border-radius: inherit;
   position: relative;
   display: block;
-  max-height: 17.5rem;
+  width: 100%;
+  height: 17rem;
   object-fit: cover;
   object-position: center;
+  flex: 1 1;
 }
-#main .gallery li p {
+#main li:not(.sub-gallery-wrapper) p {
   display: none;
 }
-#main .gallery li .artwork-link {
+#main li:not(.sub-gallery-wrapper) .artwork-link {
   text-decoration: none;
   position: absolute;
   width: 100%;
